@@ -6,7 +6,7 @@ import Header from './components/Header';
 import About from './components/About';
 import GallerySection from './components/GallerySection';
 import Skills from './components/Skills';
-import Interview from './components/Interview';
+import PriceList from './components/PriceList';
 import Testimonial from './components/Testimonial';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -21,11 +21,11 @@ const App = () => {
       <GallerySection />
       <Skills />
       <Testimonial />
-      <Interview />
+      <PriceList />
       <Contact />
       <Footer />
       <Copyright />
-      <div className='h-[4000px]'></div>
+      {/* <div className='h-[4000px]'></div> */}
     </div>
   );
 };

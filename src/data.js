@@ -1,25 +1,20 @@
 // import images
-import Logo from '../src/img/header/logo.svg';
-import GalleryImg1 from '../src/img/gallery/1.png';
-import GalleryImg2 from '../src/img/gallery/2.png';
-import GalleryImg3 from '../src/img/gallery/3.png';
-import GalleryImg4 from '../src/img/gallery/4.png';
-import GalleryImg5 from '../src/img/gallery/5.png';
-import GalleryImg6 from '../src/img/gallery/6.png';
-import GalleryImg7 from '../src/img/gallery/7.png';
-import GalleryImg8 from '../src/img/gallery/8.png';
-import QuoteImg from '../src/img/testimonial/quote.svg';
+import Logo from "../src/img/header/logo.svg";
+import GalleryImg1 from "../src/img/gallery/1.png";
+import GalleryImg2 from "../src/img/gallery/2.png";
+import GalleryImg3 from "../src/img/gallery/3.png";
+import GalleryImg4 from "../src/img/gallery/4.png";
+import GalleryImg5 from "../src/img/gallery/5.png";
+import GalleryImg6 from "../src/img/gallery/6.png";
+import GalleryImg7 from "../src/img/gallery/7.png";
+import GalleryImg8 from "../src/img/gallery/8.png";
+import GalleryImg9 from "../src/img/gallery/9.png";
+import QuoteImg from "../src/img/testimonial/quote.svg";
 // import icons
-import { GrFacebookOption } from 'react-icons/gr';
-import { IoMdArrowForward } from 'react-icons/io';
-import { FiSend } from 'react-icons/fi';
-import { FaPlay, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
-import {
-  IoLogoInstagram,
-  IoLogoPinterest,
-  IoLogoTwitter,
-  IoLogoYoutube,
-} from 'react-icons/io';
+import { GrFacebookOption } from "react-icons/gr";
+import { IoMdArrowForward } from "react-icons/io";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { IoLogoInstagram } from "react-icons/io";
 
 export const headerData = {
   logo: Logo,
@@ -27,62 +22,63 @@ export const headerData = {
 
 export const navData = {
   items: [
-    { href: '/', name: 'Kezdőlap' },
-    { href: '/', name: 'Rólam' },
-    { href: '/', name: 'Munkáim' },
-    { href: '/', name: 'Bemutatkozás' },
-    { href: '/', name: 'Cikkek' },
-    { href: '/', name: 'Kapcsolat' },
+    { href: "/", name: "Kezdőlap" },
+    { href: "#about", name: "Rólam" },
+    { href: "#work", name: "Munkáim" },
+    { href: "#pricelist", name: "Árlista" },
+    { href: "#contact", name: "Kapcsolat" },
   ],
 };
 
 export const socialData = [
-  { href: '/', icon: <GrFacebookOption /> },
-  { href: '/', icon: <IoLogoInstagram /> },
-  { href: '/', icon: <IoLogoPinterest /> },
-  { href: '/', icon: <IoLogoTwitter /> },
-  { href: '/', icon: <IoLogoYoutube /> },
+  {
+    href: "https://www.facebook.com/share/vb5SWT5k2tXPf2ED/",
+    icon: <GrFacebookOption />,
+  },
+  {
+    href: "https://instagram.com/zsofi.m91",
+    icon: <IoLogoInstagram />,
+  },
 ];
 
 export const heroData = {
-  title: 'John Doe vagyok.',
-  subtitle:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  btnText: 'Tudj meg többet',
+  title: "Maróti Zsófia.",
+  subtitle: "Azt mondják legyen a hobbid a munkád és sose kell dolgoznod.",
+  btnText: "Tudj meg többet",
   btnIcon: <IoMdArrowForward />,
 };
 
 export const aboutData = {
-  title: 'Történetem:',
+  title: "Történetem:",
   subtitle1:
-    'In velit arcu posuere integer. Dolor sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus hac vel ante sit sed scelerisque praesent duis volutpat laoreet.',
+    "Sziasztok Maróti Zsófiának hívnak. Ez a vállalkozás egy régi nagy álmom volt. Azt mondják legyen a hobbid a munkád és sose kell dolgoznod. Most belevágtam.",
   subtitle2:
-    'Nisl, sit molestie commodo congue. Etiam lectus risus in amet. Commodo molestie fames etiam aenean sed. Pellentesque et venenatis amet, tellus hac vel adipiscing sit. Placerat vitae nisl viverra faucibus tincidunt habitasse amet. Nunc, velit nunc, scelerisque imperdiet nunc.',
-  btnText: 'Tudj meg többet',
+    "Endoszkópos asszisztens/nővér vagyok főállásban. Mindig is érdekelt a piercing szúrás világa, már tanuló éveim alatt is. Nővérként nem áll messze Tőlem sem a sterilitás, sem pedig a tű. Szeretettel várok mindenkit aki szeretne egy szép testékszert. Eddigi életem során mindig fontos volt a fejlődés a szakmámban, most ezzel is bővítem a tudásom, és ezen a területen is folyamatosan tanulni, fejlődni fogok. Hívjatok, keressetek bátran. Puszi. Zsófi.",
+  btnText: "Tudj meg többet",
   btnIcon: <IoMdArrowForward />,
 };
 
 export const galleryData = {
-  title: 'Nézd meg az alkotásaimat:',
-  btnText: 'Megnézem mindet',
+  title: "Nézd meg pár munkámat:",
+  btnText: "Megnézem mindet",
   btnIcon: <IoMdArrowForward />,
   images: [
     {
       src: GalleryImg1,
       original: GalleryImg1,
-      width: 465,
-      height: 412,
+      width: 370,
+      height: 432,
     },
     {
       src: GalleryImg2,
       original: GalleryImg2,
-      width: 465,
+      width: 435,
       height: 540,
     },
     {
       src: GalleryImg3,
       original: GalleryImg3,
-      width: 465,
+      width: 325,
       height: 412,
     },
     {
@@ -100,7 +96,7 @@ export const galleryData = {
     {
       src: GalleryImg6,
       original: GalleryImg6,
-      width: 464,
+      width: 320,
       height: 412,
     },
     {
@@ -112,127 +108,109 @@ export const galleryData = {
     {
       src: GalleryImg8,
       original: GalleryImg8,
-      width: 465,
+      width: 360,
+      height: 412,
+    },
+    {
+      src: GalleryImg9,
+      original: GalleryImg9,
+      width: 370,
       height: 412,
     },
   ],
 };
 
-export const interviewData = {
-  title:
-    '“Consider what you desire. Your tattoo artist will never tell you what tattoo to have.”',
-  btnText: 'Watch it now',
-  btnIcon: <FaPlay />,
+// data.js
+
+export const priceListData = {
+  title: "Árlista",
+  services: {
+    Babáknak: [
+      { name: "Csecsemő és Gyermek Füllyukasztás", price: "13.000 Ft" },
+    ],
+    Felnőtteknek: {
+      Fül: [
+        { name: "Migrén Piercing", price: "3000 Ft/fül" },
+        { name: "Sima Füllyukasztás (2db)", price: "6000 Ft" },
+        { name: "Sima Füllyukasztás (1db)", price: "3500 Ft" },
+        { name: "Porcos Fülrész", price: "7000 Ft/db" },
+      ],
+      Orr: [{ name: "Orr piercing", price: "5000 Ft" }],
+    },
+  },
+  warning_parent: "14 éves kortól szülői beleegyezéssel.",
+  warning_home: "Házhoz kiszállás megbeszélés alapján!",
 };
 
 export const testimonialData = [
   {
     quoteImg: QuoteImg,
     message:
-      "The entire team is extremely kind and friendly. They're fantastic. They're great at what they do! And it's unique.They will properly consult with you.",
-    name: 'Jack Geoffrey',
-    occupation: 'Tattoo Artist',
-  },
-  {
-    quoteImg: QuoteImg,
-    message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam culpa asperiores officia natus dignissimos autem possimus molestias aperiam?',
-    name: 'Douglas Hane',
-    occupation: 'Tattoo Artist',
+      "Nagyon kedves és aranyos egy hölgy. Segítőkész és a gyerekekkel is szót ért.",
+    name: "Jane Doe",
   },
 ];
 
 export const contactData = {
-  title: 'Get in touch with me:',
+  title: "Lépj Velem kapcsolatba",
   info: [
     {
-      title: 'LA office',
+      title: "Időpontfoglalás:",
       subtitle:
-        'In velit arcu posuere integer sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus',
+        "Időpontot telefonon keresztül tudsz foglalni hozzám. Házhoz is megyek, de otthon is szívesen várlak.",
       address: {
         icon: <FaMapMarkerAlt />,
-        name: '784 Norman Street, Los Angeles',
+        name: "2433. Sárosd, Jókai utca 13.",
       },
       phone: {
         icon: <FaPhoneAlt />,
-        number: '+49 93 30493943',
+        number: "+36309296120",
       },
       email: {
         icon: <FaEnvelope />,
-        address: 'contact@yourcompany.com',
+        address: "info@babapiercing.hu",
       },
-      link: 'Get location',
-    },
-    {
-      title: 'NYC office',
-      subtitle:
-        'Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus',
-      address: {
-        icon: <FaMapMarkerAlt />,
-        name: '1630 Elm Drive, New York City',
-      },
-      phone: {
-        icon: <FaPhoneAlt />,
-        number: '+49 34 36573355',
-      },
-      email: {
-        icon: <FaEnvelope />,
-        address: 'contact@yourcompany.com',
-      },
-      link: 'Get location',
     },
   ],
   form: {
-    name: 'Write your name here',
-    email: 'Write your email address',
-    message: 'Write your messages here',
-    btnText: 'Send it',
+    name: "Ide írd a nevedet",
+    subject: "Ide írd a tárgyat",
+    phone: "Ide írd a telefonszámod",
+    email: "Ide írd az email címed",
+    message: "Ide írd az üzenetedet",
+    btnText: "Küldés",
   },
 };
 
 export const footerData = {
   about: {
-    title: 'About void tattoo',
+    title: "Babapiercingről",
     subtitle:
-      'Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus',
+      "Nagyon szívesen vállalok pici babáktól kezdve, a gyerekeken át, felnőttekig az embereket piercing szúrásra.",
     address: {
       icon: <FaMapMarkerAlt />,
-      name: '1630 Elm Drive, New York City',
+      name: "2433. Sárosd, Jókai utca 13.",
     },
     phone: {
       icon: <FaPhoneAlt />,
-      number: '+49 34 36573355',
+      number: "+36309296120",
     },
     email: {
       icon: <FaEnvelope />,
-      address: 'contact@yourcompany.com',
+      address: "info@babapiercing.hu",
     },
   },
   links: {
-    title: 'Useful links',
+    title: "Hasznos linkek",
     items: [
-      { href: '/', name: 'Rólam' },
-      { href: '/', name: 'Munkáim' },
-      { href: '/', name: 'Áraim' },
-      { href: '/', name: 'Kapcsolat' },
+      { href: "#about", name: "Rólam" },
+      { href: "#work", name: "Munkáim" },
+      { href: "#pricelist", name: "Áraim" },
+      { href: "#contact", name: "Kapcsolat" },
     ],
   },
   program: {
-    title: 'Working Time',
-    items: [
-      { name: 'Mon - Tue / Appointment' },
-      { name: 'Wed - Fri / 10:00 - 9:00pm' },
-      { name: 'Sat / 10:00 - 6:00pm' },
-      { name: 'Sun / no work on this day' },
-    ],
-  },
-  newsletter: {
-    title: 'Newsletter',
-    subtitle:
-      'Elit duis porttitor massa tellus nun in velit arcu posuere integer.',
-    form: {
-      placeholder: 'Your email address',
-      icon: <FiSend />,
-    },
+    title: "Időpontfoglalás",
+    items: [{ name: "Telefonon tudsz időpontot kérni." }],
   },
 };
