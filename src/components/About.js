@@ -8,7 +8,7 @@ import { fadeIn } from "../variants";
 
 const About = () => {
   // destructure about data
-  const { title, subtitle1, subtitle2 } = aboutData;
+  const { title, subtitle1, subtitle2, subtitle3 } = aboutData;
   return (
     <section className="lg:py-16 xl:pb-[160px]">
       <div id="about" className="container mx-auto">
@@ -42,6 +42,7 @@ const About = () => {
               <div className="max-w-[530px] text-grey">
                 <p className="mb-6">{subtitle1}</p>
                 <p className="mb-9">{subtitle2}</p>
+                <p className="mb-6">{subtitle3}</p>
               </div>
             </div>
           </motion.div>

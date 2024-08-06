@@ -53,7 +53,9 @@ export const aboutData = {
   subtitle1:
     "Sziasztok Maróti Zsófiának hívnak. Ez a vállalkozás egy régi nagy álmom volt. Azt mondják legyen a hobbid a munkád és sose kell dolgoznod. Most belevágtam.",
   subtitle2:
-    "Endoszkópos asszisztens/nővér vagyok főállásban. Mindig is érdekelt a piercing szúrás világa, már tanuló éveim alatt is. Nővérként nem áll messze Tőlem sem a sterilitás, sem pedig a tű. Szeretettel várok mindenkit aki szeretne egy szép testékszert. Eddigi életem során mindig fontos volt a fejlődés a szakmámban, most ezzel is bővítem a tudásom, és ezen a területen is folyamatosan tanulni, fejlődni fogok. Hívjatok, keressetek bátran. Puszi. Zsófi.",
+    "Endoszkópos asszisztens/nővér vagyok főállásban. Mindig is érdekelt a piercing szúrás világa, már tanuló éveim alatt is. Nővérként nem áll messze Tőlem sem a sterilitás, sem pedig a tű. Szeretettel várok mindenkit aki szeretne egy szép testékszert.",
+  subtitle3:
+    "Eddigi életem során mindig fontos volt a fejlődés a szakmámban, most ezzel is bővítem a tudásom, és ezen a területen is folyamatosan tanulni, fejlődni fogok. Hívjatok, keressetek bátran. Puszi. Zsófi.",
   btnText: "Tudj meg többet",
   btnIcon: <IoMdArrowForward />,
 };
