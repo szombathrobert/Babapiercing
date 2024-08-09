@@ -149,7 +149,7 @@ export const testimonialData = [
     quoteImg: QuoteImg,
     message:
       "Nagyon kedves és aranyos egy hölgy. Segítőkész és a gyerekekkel is szót ért.",
-    name: "Jane Doe",
+    name: "Egy szerető Anyuka",
   },
 ];
 
@@ -162,7 +162,7 @@ export const contactData = {
         "Időpontot telefonon keresztül tudsz foglalni hozzám. Házhoz is megyek, de otthon is szívesen várlak.",
       address: {
         icon: <FaMapMarkerAlt />,
-        name: "2433. Sárosd, Jókai utca 13.",
+        name: "2433. Sárosd, Jókai utca 11.",
       },
       phone: {
         icon: <FaPhoneAlt />,
@@ -191,7 +191,7 @@ export const footerData = {
       "Nagyon szívesen vállalok pici babáktól kezdve, a gyerekeken át, felnőttekig az embereket piercing szúrásra.",
     address: {
       icon: <FaMapMarkerAlt />,
-      name: "2433. Sárosd, Jókai utca 13.",
+      name: "2433. Sárosd, Jókai utca 11.",
     },
     phone: {
       icon: <FaPhoneAlt />,

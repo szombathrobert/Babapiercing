@@ -27,7 +27,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { name, email, phone, subject, message } = formData;
-    const response = await fetch("https://formspree.io/f/xleqzkjk", {
+    const response = await fetch("http://80.77.123.93:5000/send", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -36,8 +36,8 @@ const Contact = () => {
         name,
         email,
         phone,
+        subject,
         message,
-        _subject: subject,
       }),
     });
     if (response.ok) {
@@ -50,7 +50,6 @@ const Contact = () => {
         message: "",
       });
     } else {
-      // Hibás válasz esetén azonosítjuk a hibát
       let errorMessage =
         "Hiba történt az üzenet elküldése közben. Kérlek, próbáld újra később.";
       if (response.status === 429) {

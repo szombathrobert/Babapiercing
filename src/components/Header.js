@@ -8,25 +8,26 @@ import Socials from "./Socials";
 // import icons
 import { TiThMenuOutline } from "react-icons/ti";
 
-const Header = () => {
+const Header = ({ toggleMenu, closeMenu, navMobile }) => {
   // destructure header data
   const { logo } = headerData;
   // header state
   const [isActive, setIsActive] = useState(false);
-  // nav mobile state
-  const [navMobile, setNavMobile] = useState(false);
   // scroll event
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const handleScroll = () => {
       window.scrollY > 50 ? setIsActive(true) : setIsActive(false);
-    });
-  });
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <header
       className={`${
         isActive ? "h-[100px] lg:h-[110px] shadow-lg" : "h-[120px] lg:h-[150px]"
       } fixed bg-white left-0 right-0 z-10 max-w-[1920px] 
-    w-full mx-auto transition-all duraion-300`}
+    w-full mx-auto transition-all duration-300`}
     >
       <div className="flex justify-between items-center h-full pl-[50px] pr-[60px]">
         {/* logo */}
@@ -39,7 +40,7 @@ const Header = () => {
         </div>
         {/* nav menu btn - showing by default - hidden on desktop mode */}
         <div
-          onClick={() => setNavMobile(!navMobile)}
+          onClick={toggleMenu}
           className="xl:hidden absolute right-[5%] p-2 rounded-md cursor-pointer"
         >
           <TiThMenuOutline className="text-4xl" />
@@ -51,9 +52,9 @@ const Header = () => {
               ? "top-[100px] lg:top-[110px]"
               : "top-[120px] lg:top-[150px]"
           } fixed bg-white w-full h-full left-0 -z-10 
-              transition-all duraion-300`}
+              transition-all duration-300`}
         >
-          <NavMobile />
+          <NavMobile closeMenu={closeMenu} />
         </div>
         {/* social icons - initially hidden - show on desktop */}
         <div className="hidden xl:flex">

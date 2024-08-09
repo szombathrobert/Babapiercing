@@ -5,6 +5,8 @@ import { aboutData } from "../data";
 import { motion } from "framer-motion";
 // import variants
 import { fadeIn } from "../variants";
+// import css
+import "./style.css";
 
 const About = () => {
   // destructure about data
@@ -19,12 +21,20 @@ const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="flex flex-col lg:flex-row flex-1"
+            className="flex flex-col lg:flex-row flex-1 justify-center items-center w-full h-full"
           >
             <div
-              className="text-[360px] xl:text-[720px] leading-none font-tertiary 
-          lg:-tracking-[0.055em] bg-about bg-no-repeat bg-right bg-clip-text 
-          text-transparent"
+              className="text-[360px] sm:text-[430px] md:text-[350px] xl:text-[700px] leading-none font-tertiary
+    lg:-tracking-[0.055em] tracking-normal bg-about bg-no-repeat bg-right bg-clip-text text-transparent w-full h-auto overflow-hidden"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                textAlign: "center",
+                backgroundSize: "contain", // Adjust size if necessary
+                backgroundPosition: "right center", // Position the image to the right
+                backgroundRepeat: "no-repeat", // Ensure the image does not repeat
+              }}
             >
               01
             </div>

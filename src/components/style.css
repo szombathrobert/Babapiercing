@@ -1,0 +1,19 @@
+/* Default styles for larger screens */
+.bg-custom {
+  background-size: contain; /* Adjust as necessary */
+  background-position: right center; /* Position to the right */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  text-align: center; /* Center the text */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 770px) {
+  .mobile-bg-size {
+    background-size: 80%; /* Adjust size to make it smaller on mobile */
+    background-position: center; /* Center the image */
+  }
+
+  .mobile-tracking {
+    letter-spacing: -0.01em; /* Adjust tracking for mobile view */
+  }
+}
